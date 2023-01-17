@@ -1,1 +1,1 @@
-[test|(./test.html "Hover text)]
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
