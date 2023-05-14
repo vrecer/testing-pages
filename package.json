@@ -1,0 +1,25 @@
+{
+  "name": "testing-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter mocha-allure-reporter --recursive --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrecer/testing-pages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrecer/testing-pages/issues"
+  },
+  "homepage": "https://github.com/vrecer/testing-pages#readme",
+  "dependencies": {
+    "allure-js-commons": "^2.0.0-beta.24",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
