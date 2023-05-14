@@ -43,5 +43,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./allure-history
-          destination_dir: subdir
+          PUBLISH_DIR: ./allure-history/test
