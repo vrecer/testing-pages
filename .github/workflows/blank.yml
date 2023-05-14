@@ -43,7 +43,8 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history/project1
+          PUBLISH_DIR: allure-history
+          DESTINATION_DIR: project1
 
       - name: Deploy report to Github Pages2
         if: always()
@@ -51,4 +52,5 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history/project2
+          PUBLISH_DIR: allure-history
+          DESTINATION_DIR: project2
