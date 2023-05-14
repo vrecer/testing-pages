@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter mocha-allure-reporter --recursive --exit"
+    "test": "mocha --reporter allure-mocha --recursive --exit"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/vrecer/testing-pages#readme",
   "dependencies": {
-    "allure-js-commons": "^2.0.0-beta.24",
     "chai": "^4.3.7",
-    "mocha": "^10.2.0",
     "mocha-allure-reporter": "^1.4.0"
+  },
+  "devDependencies": {
+    "allure-mocha": "^2.3.0",
+    "mocha": "^10.2.0"
   }
 }
