@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter allure-js-commons/allure-mocha --reporter-options targetDir=customReportDir --recursive --exit"
+    "test": "mocha --reporter allure-mocha --reporter-options targetDir=customReportDir --recursive --exit"
   },
   "repository": {
     "type": "git",
