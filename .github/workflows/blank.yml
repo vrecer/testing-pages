@@ -17,7 +17,7 @@ jobs:
         run: npm install
 
       - name: Run Mocha tests
-        run: npm test
+        run: TEST_ENV='test' npm test
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -44,3 +44,13 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+          destination_dir: project1
+
+      - name: Deploy report to Github Pages2
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
+          destination_dir: project2
