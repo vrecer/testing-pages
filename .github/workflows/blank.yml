@@ -45,8 +45,7 @@ jobs:
       - shell: bash
         run: |
             mkdir allure-history/${{ github.run_number }} \
-            && cp allure-report -r allure-history/test2/${{ github.run_number }}/ \
-            && 
+            && cp allure-report -r allure-history/test2/${{ github.run_number }}/
 
       - name: Deploy report to Github Pages
         if: always()
