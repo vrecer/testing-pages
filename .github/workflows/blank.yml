@@ -25,7 +25,7 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages/test
+          path: gh-pages
 #
 #      - name: Allure Report action from marketplace
 #        uses: simple-elf/allure-report-action@master
@@ -45,7 +45,7 @@ jobs:
       - shell: bash
         run: |
             mkdir allure-history/${{ github.run_number }} \
-            && cp allure-report -r allure-history/${{ github.run_number }}/ \
+            && cp allure-report -r allure-history/test2/${{ github.run_number }}/ \
             && 
 
       - name: Deploy report to Github Pages
