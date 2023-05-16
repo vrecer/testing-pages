@@ -43,9 +43,10 @@ jobs:
         run: npm run-scrip allure
 
       - shell: bash
-        run: |
-            mkdir test2 \
-            mkdir allure-history/${{ github.run_number }} \
+        run: >
+            ls -ls \
+            && mkdir test2 \
+            && mkdir -r allure-history/${{ github.run_number }} \
             && cp allure-report -r allure-history/test2/${{ github.run_number }} \
             && cp -r allure-history  test2  
 
