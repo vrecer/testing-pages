@@ -47,7 +47,7 @@ jobs:
             mkdir -p test2/${{ github.run_number }} \
             && mkdir -p test2/last-history \
             && cp allure-report -r test2/${{ github.run_number }} \
-            && cp -r test2/${{ github.run_number }} test2/last-history
+            && cp -r test2/${{ github.run_number }}/history test2/last-history
 
       - name: Deploy report to Github Pages
         if: always()
