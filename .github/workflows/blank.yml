@@ -19,6 +19,9 @@ jobs:
       - name: Run Mocha tests
         run: TEST_ENV='test' npm test
 
+      - name: Run Mocha tests
+        run: npm run-scrip allure
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
@@ -38,9 +41,6 @@ jobs:
 #          allure_history: allure-history
 #          subfolder: test
 
-
-      - name: Run Mocha tests
-        run: npm run-scrip allure
 
       - shell: bash
         run: >
