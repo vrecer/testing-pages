@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter allure-mocha --reporter-options targetDir=customReportDir --recursive --exit"
+    "test": "mocha --reporter allure-mocha --reporter-options targetDir=customReportDir --recursive --exit",
+    "allure": "node ./allure.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,11 @@
   },
   "homepage": "https://github.com/vrecer/testing-pages#readme",
   "dependencies": {
+    "allure-commandline": "^2.22.0",
     "chai": "^4.3.7"
   },
   "devDependencies": {
-    "mocha": "^10.2.0",
-    "allure-mocha": "^2.3.0"
+    "allure-mocha": "^2.3.0",
+    "mocha": "^10.2.0"
   }
 }

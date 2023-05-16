@@ -38,12 +38,15 @@ jobs:
 #          allure_history: allure-history
 #          subfolder: test
 
+
+      - name: Run Mocha tests
+        run: npm run-scrip allure
+
       - shell: bash
-        run: >
-          sudo apt-add-repository ppa:qameta/allure \
-            && sudo apt-get update \
-            && sudo apt-get install allure \
-            && allure generate allure-results -o test2/allure-report
+        run: |
+            mkdir allure-history/${{ github.run_number }} \
+            && cp allure-report -r allure-history/${{ github.run_number }}/ \
+            && 
 
       - name: Deploy report to Github Pages
         if: always()
