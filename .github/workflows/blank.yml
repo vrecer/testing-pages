@@ -40,7 +40,7 @@ jobs:
 
       - shell: bash
         run: >
-          sudo apt-add-repository ppa:yandex-qatools/allure-framework \
+          sudo apt-add-repository ppa:qameta/allure \
             && sudo apt-get update \
             && sudo apt-get install allure \
             && allure generate allure-results -o test2/allure-report
